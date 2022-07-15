@@ -1,0 +1,114 @@
+@import url('libs/_bootstrap-grid.scss');
+@import url('libs/_bootstrap-reboot.scss');
+@import url('libs/_slick.scss');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+// firstscreen
+@import url('blocks/_firstscreen.scss');
+.firstscreen {
+    position: relative;
+    height: 100vh;
+    &__wallpapers {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        .firstscreen-bg {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 64px;
+            color: #fff;
+            font-weight: 400;
+        }
+        h2 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 400;
+
+        }
+        .firstscreen__btn {
+            background-color: #DD4A2D;
+            color: #fff;
+            text-decoration: none;
+            width: 170px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            margin-top: 20px;
+            align-self: end;
+            transition: .2s all linear;
+            &:hover {
+                transform: scale(1.07);
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .firstscreen__sociallink {
+            transition: .4s all ease;
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+        
+    }
+    // dots
+    .slick-dots {
+       display: flex;
+       li {
+        margin: 0 15px
+       }
+    }
+}
+// header
+.header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 300;
+        &:hover, &:active, &:focus {
+            color: #3EA2EE;
+        }
+    }
+    &__listitem {
+        margin: 0 10px;
+    }
+}
