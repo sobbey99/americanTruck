@@ -970,6 +970,249 @@ body {
     }
 }
 
+// apply
+.apply {
+    padding-top: 45px;
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #052941;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        max-width: 700px;
+    }
+    &-form {
+        &_driver {
+            margin-top: 50px;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr );
+            column-gap: 50px;
+            grid-template-rows: 530px;
+        }
+        .driver-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            &__text {
+                height: 45px;
+                padding: 0 20px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #303030;
+                background-color: #E2E2E2;
+                border: none;
+                outline: 0;
+                &:active {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+                &:focus {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+                &:hover {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+            }
+            &__select {
+                display: block;
+                height: 45px;
+                padding: 0 20px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #303030;
+                background: url('../icons/select_bg.svg') center right / cover no-repeat;
+                border: none;
+                outline: 0;
+                appearance: none;
+                position: relative;
+            }
+        }
+        &__info {
+            background-color: rgba(5, 41, 65, .92);
+            color: #fff;
+            padding: 50px;
+        }
+        &__submit {
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            font-size: 24px;
+            font-weight: 500;
+            border-radius: 24px;
+            width: 250px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            transition: .3s all linear;
+            &:hover {
+                background: #fff;
+                color:rgba(5, 41, 65, .8);
+            }
+        }
+        &_owner {
+            .apply-form__info_operator {
+                order: 1;
+                background-color: rgba(221, 74, 45, .92);
+                #operator-submit {
+                    &:hover {
+                        color: rgba(221, 74, 45, .92);
+                    }
+                }
+            }
+            .apply-form__typing {
+                order: 2;
+            }
+        }
+    }
+    .apply-info {
+        &__title {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 45px;
+        }
+        &__list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+        &__btn {
+            display: flex;
+            justify-content: end;
+            margin-top: 10px;
+        }
+    }
+
+    .linespace {
+        margin: 50px 0;
+        &__line {
+            height: 2px;
+            width: 100%;
+            background-color: #E9E9E9;
+        }
+    }
+    &-footer {
+        background: #000;
+        color: #fff;
+        padding: 25px 0;
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+// beteam
+.beteam{
+    height: 675px;
+    margin-top: 75px;
+    color: #fff;
+    position: relative;
+    .container {
+        height: 100%;
+    }
+    &__wrapper {
+        background-color: #052941;
+        padding: 50px 0 65px 50px;
+        height: 100%;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 67px;
+    }
+    &-item {
+        width: 380px;
+        height: 80px;
+        border: 1px solid #999999;
+        padding: 20px 16px;
+        margin-bottom: 50px;
+        &__title {
+            font-size: 12px;
+            color: #999999;
+            font-weight: 400;
+        }
+        &__info {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 80px;
+        background-color: #DD4A2D;
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 150px;
+    }
+    &-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 170px;
+    }
+    .offside {
+        height: 480px;
+        width: 630px;
+        position: absolute;
+        background: url('../img/drive_bg.jpg') center center / cover no-repeat;
+        top: 160px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            &__item {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #DD4A2D;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                &_line {
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+
 //half ( non production )
 // services ( non production )
 // counting ( non production )
