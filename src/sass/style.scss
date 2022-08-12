@@ -1251,7 +1251,9 @@ body {
     }
 }
 
-
+.header .header-phone__menu {
+    display: none;
+}
 .header-phone, .header-phone__menu {
     display: none;
 }
@@ -1501,7 +1503,7 @@ body {
             width: 100vw;
             height: 100vh;
             position: absolute;
-            top: -1000%;
+            top: -99999999%;
             background-color: #fff;
             transition: .3s all ease;
             &_active {
@@ -1535,13 +1537,35 @@ body {
         height: 75px;
     }
 }
-
-
-
-
-
+// 768 DONE for
+// 1. INDEX.HTML
 @media screen and (max-width: 768px) {
-    
+    .firstscreen__wrapper, .firstscreen__descr {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .firstscreen__btn {
+        margin: 0 auto;
+    }
+    .firstscreen__wrapper {
+        justify-content: start;
+    }
+    .firstscreen__social {
+        margin-top: 50px;
+        flex-direction: row;
+        width: 100%;
+    }
+    .solution-offer__text {
+        font-size: 16px;
+    }
+    .solution-offer {
+        column-gap: 2px;
+    }
+    .feedback-left__icon {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 
@@ -1549,7 +1573,74 @@ body {
 
 
 @media screen and (max-width: 575px) {
-    
+    .firstscreen__descr h1 {
+        font-size: 32px;
+    }
+    .firstscreen__descr h2 {
+        font-size: 18px;
+    }
+    .weare__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .whywe__wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+    .solution-title__text {
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .solution-title__img, .feedback-title__img{
+        width: 70px;
+        transform: translateY(0px);
+    }
+    .solution-title__start_back, .feedback-title__start_back {
+        transform: translateY(0px) rotateY(180deg);
+    }
+    .solution-offer {
+        grid-template-columns: 1fr 1fr;
+        .solution-offer__item_changed {
+            order: -1;
+        }
+        column-gap: 0;
+    }
+    .solution-bg {
+        margin-top: 0;
+        height: auto;
+        padding: 60px 0;
+    }
+    .solution-btn {
+        margin-top: 30px;
+    }
+    .feedback__grid {
+        grid-template-columns: 1fr;
+    }
+    .questions__title {
+        font-size: 2rem;
+    }
+    .footer-contact__link a {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-copyright__text {
+        font-size: 11px;
+    }
+    .capabilites-wallpaper {
+        padding: 0;
+    }
+    .capabilites-wallpaper__title {
+        margin-top: 30px;
+    }
+    .capabilites-wallpaper__btn {
+        margin: 30px 0;
+    }
+    .whywe-item__text {
+        margin: 0 auto;
+    }
+ 
 }
 
 //half ( non production )
