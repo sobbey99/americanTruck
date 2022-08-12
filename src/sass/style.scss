@@ -1266,12 +1266,89 @@ body {
 }
 // 1200 DONE for
 // 1. INDEX.HTML
+// 2. ABOUT.HTML
 @media screen and (max-width: 1200px) {
     //MEDIA FOR INDEX.HTML
-
+    .header-desktop {
+        display: none;
+    }
+    .firstscreen__logo {
+        display: none;
+    }
+    .header-phone {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &__hamburger {
+            span {
+                height: 4px;
+                width: 45px;
+                background-color: black;
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        &__logo {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+        &__menu {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: -99999999%;
+            background-color: #fff;
+            transition: .3s all ease;
+            &_active {
+                top: 0;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__close {
+            position: absolute;
+            right: 50px;
+            top: 0;
+            font-size: 50px;
+        }
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: black;
+        }
+    }
+    .header_moved {
+        height: 75px;
+    }
+    // MEDIA FOR ABOUT.HTML
+    .about-one__texttitle {
+        font-size: 2rem;
+    }
 }
 // 991 DONE for
 // 1. INDEX.HTML
+// 2. ABOUT.HTML
 @media screen and (max-width: 991px) {
     // MEDIA FOR INDEX.HTML
     .header {
@@ -1467,78 +1544,21 @@ body {
         }
     }
 
-    .header-desktop {
-        display: none;
+    //MEDIA FOR ABOUT.HTML
+    .about-top h1 {
+        font-size: 3rem;
     }
-    .firstscreen__logo {
-        display: none;
+    .about-one__texttitle {
+        transform: translateY(10px);
+        font-size: 1.5rem;
     }
-    .header-phone {
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        &__hamburger {
-            span {
-                height: 4px;
-                width: 45px;
-                background-color: black;
-                display: block;
-                margin: 5px 0;
-            }
-        }
-        &__logo {
-            width: 75px;
-            height: 75px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 90%;
-                height: 90%;
-            }
-        }
-        &__menu {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            top: -99999999%;
-            background-color: #fff;
-            transition: .3s all ease;
-            &_active {
-                top: 0;
-            }
-        }
-        &__close {
-            position: absolute;
-            right: 50px;
-            top: 0;
-            font-size: 50px;
-        }
-        &__list {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            height: 75%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        &__link {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 24px;
-            color: black;
-        }
-    }
-    .header_moved {
-        height: 75px;
+    .about-two__wrapper {
+        grid-template-columns: 1fr;
     }
 }
 // 768 DONE for
 // 1. INDEX.HTML
+// 2. ABOUT.HTML
 @media screen and (max-width: 768px) {
     .firstscreen__wrapper, .firstscreen__descr {
         flex-direction: column;
@@ -1566,12 +1586,38 @@ body {
         width: 50px;
         height: 50px;
     }
+    //MEDIA FOR ABOUT.HTML
+    .about-top h1 {
+        font-size: 2.4rem;
+    }
+    .about-one__decor {
+        width: 70px;
+    }
+    .about-one__texttitle {
+        font-size: 1.1rem;
+        transform: translateY(14px);
+    }
+    .about-one__text {
+        width: auto;
+    }
+    .about-two__ilustr {
+        img {
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .about-two__title {
+        font-size: 1.9rem;
+    }
 }
 
 
 
 
-
+// 575 DONE for
+// 1. INDEX.HTML
+// 2. ABOUT.HTML
 @media screen and (max-width: 575px) {
     .firstscreen__descr h1 {
         font-size: 32px;
@@ -1640,7 +1686,21 @@ body {
     .whywe-item__text {
         margin: 0 auto;
     }
- 
+    //MEDIA FOR ABOUT.HTML
+    .about-top h1 {
+        font-size: 1.4rem;
+    }
+    .about-one__decor {
+        width: 50px;
+    }
+    .about-one__texttitle {
+        text-align: center;
+        font-size: 16px;
+    }
+    .about-three__list li {
+        margin: 5px 0;
+        max-width: 70%;
+    }
 }
 
 //half ( non production )
