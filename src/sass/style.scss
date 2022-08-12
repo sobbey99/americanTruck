@@ -1267,6 +1267,7 @@ body {
 // 1200 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
+// 3. SUPPORT.HTML
 @media screen and (max-width: 1200px) {
     //MEDIA FOR INDEX.HTML
     .header-desktop {
@@ -1345,10 +1346,20 @@ body {
     .about-one__texttitle {
         font-size: 2rem;
     }
+    //MEDIA FOR SUPPORT.HTML
+    .support__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
 }
 // 991 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
+// 3. SUPPORT.HTML
 @media screen and (max-width: 991px) {
     // MEDIA FOR INDEX.HTML
     .header {
@@ -1555,10 +1566,23 @@ body {
     .about-two__wrapper {
         grid-template-columns: 1fr;
     }
+
+    //MEDIA FOR SUPPORT.HTML
+    .support__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .support-form {
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.9;
+    }
 }
 // 768 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
+// 3. SUPPORT.HTML
 @media screen and (max-width: 768px) {
     .firstscreen__wrapper, .firstscreen__descr {
         flex-direction: column;
@@ -1609,6 +1633,33 @@ body {
     }
     .about-two__title {
         font-size: 1.9rem;
+    }
+    //MEDIA FOR SUPPORT.HTML
+    .support-form {
+        top: 100px;
+    }
+    .orange-item__icon {
+        width: 70px;
+        height: 70px;
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .orange__wrapper {
+        column-gap: 20px;
+    }
+    .orange-item {
+        text-align: center;
+    }
+    .orange-item__title {
+        font-size: 20px;
+    }
+    .orange-item__subtitle {
+        font-size: 13px;
+    }
+    .orange {
+        padding: 60px 0;
     }
 }
 
@@ -1700,6 +1751,17 @@ body {
     .about-three__list li {
         margin: 5px 0;
         max-width: 70%;
+    }
+    // MEDIA FOR SUPPORT.HTML
+    .support-form {
+        width: 90%;
+    }
+    .orange {
+        padding-top: 180px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
     }
 }
 
