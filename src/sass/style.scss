@@ -1257,6 +1257,9 @@ body {
 .header-phone, .header-phone__menu {
     display: none;
 }
+.beteam-mobile__title {
+    display: none;
+}
 // MEDIA REQUESTS
 
 // 1400 DONE for
@@ -1268,6 +1271,7 @@ body {
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
 // 3. SUPPORT.HTML
+// 4. APPLY.HTML
 @media screen and (max-width: 1200px) {
     //MEDIA FOR INDEX.HTML
     .header-desktop {
@@ -1355,11 +1359,29 @@ body {
             width: 100%;
         }
     }
+    //MEDIA FOR APPLY.HTML
+    .beteam .offside {
+        display: none;
+    }
+    .beteam-mobile__title {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .beteam__wrapper, .beteam__another {
+        width: 100%;
+    }
+    .beteam__btn {
+        margin-left: 0;
+    }
 }
 // 991 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
 // 3. SUPPORT.HTML
+// 4. APPLY.HTML
 @media screen and (max-width: 991px) {
     // MEDIA FOR INDEX.HTML
     .header {
@@ -1578,11 +1600,22 @@ body {
         transform: translateX(-50%);
         opacity: 0.9;
     }
+    //MEDIA FOR APPLY.HTML
+    .apply-form__grid {
+        column-gap: 30px;
+    }
+    .apply .apply-info__title  {
+        margin-bottom: 15px;
+    }
+    .apply .apply-info__btn {
+        margin-top: 40px;
+    }
 }
 // 768 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
 // 3. SUPPORT.HTML
+// 4. APPLY.HTML
 @media screen and (max-width: 768px) {
     .firstscreen__wrapper, .firstscreen__descr {
         flex-direction: column;
@@ -1661,14 +1694,37 @@ body {
     .orange {
         padding: 60px 0;
     }
+    //MEDIA FOR APPLY.HTML
+    .apply {
+        padding-top: 100px;
+    }
+    .apply-form__grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 30px;
+        grid-template-rows: 530px;
+    }
+    .apply-form__info {
+        order: -1;
+    }
+    .apply-form__typing {
+        height: 530px;
+    }
+    .apply-form_driver {
+        margin-top: 25px;
+    }
+    .beteam__another {
+        top: 140px;
+    }
+    .beteam-mobile__title {
+        margin-top: 40px;
+    }
 }
-
-
-
-
 // 575 DONE for
 // 1. INDEX.HTML
 // 2. ABOUT.HTML
+// 3. SUPPORT.HTML
+// 4. 
 @media screen and (max-width: 575px) {
     .firstscreen__descr h1 {
         font-size: 32px;
@@ -1762,6 +1818,40 @@ body {
             grid-template-columns: 1fr;
             row-gap: 40px;
         }
+    }
+    //MEDIA FOR APPLY.HTML
+    .apply-form__info {
+        padding: 0;
+        height: 470px;
+    }
+    .apply-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .apply .apply-info__list {
+        padding-left: 35px;
+    }
+    .apply-form__grid {
+        grid-template-rows: 450px;
+    }
+    .apply .apply-info__title {
+        margin-top: 20px;
+    }
+    .beteam-item {
+        width: 100%;
+    }
+    .beteam__wrapper {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+    .beteam-mobile__title {
+        margin-top: 10px;
+    }
+    .apply-footer {
+        padding: 10px 0;
+        text-align: center;
     }
 }
 
